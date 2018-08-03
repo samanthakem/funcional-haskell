@@ -1,3 +1,19 @@
+-- Questão 02 - Given a sorted array and a number x, find a pair in array whose sum is closest to x 
+
+-- Exemplo de uso:
+
+-- closestSum [10, 22, 28, 29, 30, 40] x
+-- x = 54
+-- Output: (22,30)
+-- x = 32
+-- Output: (10,22)
+
+-- closestSum [1, 3, 4, 7, 10] x
+-- x = 15
+-- Output: (4,10)
+-- x = 32
+-- Output: (7,10)
+
 closestSum arr x = do
   let diff = maxBound :: Int
   let n = length arr

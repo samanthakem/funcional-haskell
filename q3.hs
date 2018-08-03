@@ -1,3 +1,14 @@
+-- Questão 03 - Encontrar floor e ceil de um número x dentro de um array a.
+-- O número x pode não estar no array a 
+
+-- Exemplo de uso:
+
+-- getFloorAndCeil [10, 22, 28, 29, 30, 40] x
+-- x = 28
+-- Output: (28,28)
+-- x = 13
+-- Output: (10,22)
+
 getFloorAndCeil arr x = do
   getFloorAndCeil' arr x  (maxBound :: Int)  (minBound :: Int) (0)
 

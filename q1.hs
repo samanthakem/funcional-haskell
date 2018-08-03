@@ -1,5 +1,13 @@
 -- Questão 01 - Implementar Interpolation Search -- 
 
+-- Exemplo de uso:
+
+-- itplSearch [4,3,2,5,6] x
+-- x = 8
+-- Output: -1
+-- x = 5
+-- Output: 3
+
 itplSearch arr x = do
   let size = (length arr)
   i <- itplSearch' arr size 0 (size - 1) x

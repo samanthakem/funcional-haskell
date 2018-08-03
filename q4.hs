@@ -1,3 +1,13 @@
+-- Questão 04 - Given a sorted array an element x to be searched, find position of x in the array.
+
+-- Exemplo de uso:
+
+-- expSearch [10, 22, 28, 29, 30, 40] x
+-- x = 28
+-- Output: 2
+-- x = 31
+-- Output: -1
+
 expSearch arr x = do
   let size = (length arr)
   i <- expSearch' arr size x

@@ -1,5 +1,22 @@
 -- Questão 06 - Implementar uma pilha e seus algoritmos -- 
 
+-- Exemplo de uso:
+
+-- a = create
+-- a (pra imprimir a no prompt)
+-- Output: Stack []
+-- b = pop a
+-- b
+-- Output: *** Exception: Não é possível realizar o pop de uma pilha vazia.
+--         CallStack (from HasCallStack):
+--         error, called at q6.hs:9:18 in main:Main
+-- c = push 2 a
+-- c
+-- Output: Stack [2]
+-- d = pop c
+-- c
+-- Output: (2,Stack [])
+
 data Stack a = Stack [a] deriving (Show)
 
 create = Stack([])
