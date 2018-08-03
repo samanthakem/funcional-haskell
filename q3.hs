@@ -1,7 +1,3 @@
-
--- Returns (floor, ceil)
--- Se não existir ceil retorna o maior inteiro que existe
--- Se não existir floor retorna o menor inteiro que existe
 getFloorAndCeil arr x = do
   getFloorAndCeil' arr x  (maxBound :: Int)  (minBound :: Int) (0)
 
